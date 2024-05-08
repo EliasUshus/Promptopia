@@ -23,7 +23,7 @@ const Nav = () => {
       <Link href='/' className='flex gap-2 flex-center'>
         <Image
           src='/assets/images/logo.svg'
-          alt="Promptopia logo"
+          alt='logo'
           width={30}
           height={30}
           className='object-contain'
@@ -60,9 +60,7 @@ const Nav = () => {
                 <button
                   type='button'
                   key={provider.name}
-                  onClick={() => {
-                    signIn(provider.id);
-                  }}
+                  onClick={() => signIn(provider.id)}
                   className='black_btn'
                 >
                   Sign in
